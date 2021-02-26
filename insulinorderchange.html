@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Insulin Order Change</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header role="banner">
+        <h1>Insulin Order Change</h1>
+        <nav role="navigation">
+          <ul>
+            <li><a href="../index.html">Home Page</a></li>
+            <li><a href="../insulin/initialdose.html">Initial Dose</a></li>
+            <li><a href="../insulin/insulinorderchange.html">Order Change</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main role="main">
+        <form action="insulinorderchange.php" method="post">
+          <label for="currentBG">What is the Current BG value?</label>
+          <input type="text" size="20" name="currentBG" id="currentBG"><br>
+          
+          <label for="previousBG">What was the Previous BG value?</label>
+          <input type="text" size="20" name="previousBG" id="previousBG"><br>
+          
+          <label for="infusionRate">What is the Current Infusion Rate (units/hr)?</label>
+          <input type="text" size="20" name="infusionRate" id="infusionRate"><br>
+        
+          <input type="submit" value="Get New Dose">
+        </form>
+      </main>
+
+      <footer role="contentinfo">
+        <p>This site was created and is maintained by David Truesdale.</p>
+        <p>All feedback is welcomed at <a href="mailto:davidetruesdale@siteproject.online">davidetruesdale@siteproject.online</a>.</p>
+        <p>Visit my personal site at <a href="http://www.siteproject.online">siteproject.online</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>

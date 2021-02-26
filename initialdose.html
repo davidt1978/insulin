@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Initial Insulin Medical Order Dosing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header role="banner">
+        <h1>Initial Insulin Medical Order Dosing</h1>
+        <nav role="navigation">
+          <ul>
+            <li><a href="../index.html">Home Page</a></li>
+            <li><a href="../insulin/initialdose.html">Initial Dose</a></li>
+            <li><a href="../insulin/insulinorderchange.html">Order Change</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main role="main">
+        <h2>Medication Orders</h2>
+        
+        <form action="initialdose.php" method="post">
+          <label for="glucose">What is the Glucose level (mg/dL)?</label>
+          <input type="text" size="6" name="glucose" id="glucose">
+
+          <input type="submit" value="Get Initial Dose">
+        </form>
+        
+        <h3>Instructions from Original Excel Spreadsheet</h3>
+        <p>Mix 100 units of regular insulin in 100 mL of 0.9% NaCl.</p>
+        <p>Initial insulin bolus and infusion rate = Glucose/200. Rounded to the nearest 0.5 units. (e.g. if glucose is 255 mg/dL, 255/200 = 1.275, rounded to 1.5 units; Give patient a bolus of 1.5 units and start drip at 1.5 units/hr)</p>
+        <p>Enter glucose value below to calculate bolus and infusion rate.</p>
+        <p>If patient's blood glucose is >400 mg/dL, DO NOT use the protocol. Call prescriber.</p>
+
+      </main>
+    
+      <footer role="contentinfo">
+        <p>This site was created and is maintained by David Truesdale.</p>
+        <p>All feedback is welcomed at <a href="mailto:davidetruesdale@siteproject.online">davidetruesdale@siteproject.online</a>.</p>
+        <p>Visit my personal site at <a href="http://www.siteproject.online">siteproject.online</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
